@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     smile_rubocop_config (0.1.0)
-      rubocop (~> 0.52)
+      rubocop (= 0.52)
 
 GEM
   remote: https://rubygems.org/
@@ -13,9 +13,9 @@ GEM
       ast (~> 2.4.0)
     powerpack (0.1.1)
     rainbow (3.0.0)
-    rubocop (0.55.0)
+    rubocop (0.52.0)
       parallel (~> 1.10)
-      parser (>= 2.5)
+      parser (>= 2.4.0.2, < 3.0)
       powerpack (~> 0.1)
       rainbow (>= 2.2.2, < 4.0)
       ruby-progressbar (~> 1.7)
