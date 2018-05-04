@@ -1,0 +1,46 @@
+AllCops:
+  TargetRubyVersion: 2.3
+  Exclude:
+    - "spec/dummy/**/*"
+    - "config/**/*"
+    - "db/**/*"
+    - "dist/**/*"
+    - "features/**/*"
+    - "**/node_modules/**/*"
+    - "script/**/*"
+    - "**/spec/**/*"
+    - "**/vendor/**/*"
+    - "bin/**/*"
+
+Metrics/LineLength:
+  IgnoreCopDirectives: true
+
+Metrics/MethodLength:
+  Max: 25
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Layout/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Style/Documentation:
+  Enabled: false
+
+Style/SpaceInLambdaLiteral:
+  EnforcedStyle: require_space
+
+Gemspec/OrderedDependencies:
+  Enabled: false
+
+Style/Lambda:
+  EnforcedStyle: literal
+
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: double_quotes
+
+Layout/DotPosition:
+  EnforcedStyle: trailing
