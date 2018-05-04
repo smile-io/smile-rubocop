@@ -1,7 +1,7 @@
-# SmileRubocopConfig
+# Smile Rubocop
 
 This gem holds a shared rubocop config for Smile.io Ruby repositories.
-Installing the gem will install a version of Rubocop compatible with this
+Installing the gem will also install a version of Rubocop compatible with this
 config.
 
 ## Installation
@@ -10,7 +10,7 @@ Add this line to your application's Gemfile:
 
 ```ruby
 source "https://gem.fury.io/smileio/" do
-  gem 'smile_rubocop_config'
+  gem 'smile_rubocop'
 end
 ```
 
@@ -24,7 +24,7 @@ To use within your project, create a file named `.rubocop.yml` in the root of
 your project, with the following content:
 ```yml
 inherit_gem:
-  smile_rubocop_config:
+  smile_rubocop:
     - default.yml
 ```
 
