@@ -1,8 +1,8 @@
-require File.expand_path("../lib/smile_rubocop_config/version", __FILE__)
+require File.expand_path("../lib/smile_rubocop/version", __FILE__)
 
 Gem::Specification.new do |spec|
-  spec.name          = "smile_rubocop_config"
-  spec.version       = SmileRubocopConfig::VERSION
+  spec.name          = "smile_rubocop"
+  spec.version       = SmileRubocop::VERSION
   spec.authors       = ["Alex Willemsma"]
   spec.email         = ["alexw@smile.io"]
 
