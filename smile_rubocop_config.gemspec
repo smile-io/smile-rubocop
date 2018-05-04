@@ -1,4 +1,4 @@
-require_relative "lib/smile_rubocop_config/version"
+require File.expand_path("../lib/smile_rubocop_config/version", __FILE__)
 
 Gem::Specification.new do |spec|
   spec.name          = "smile_rubocop_config"
