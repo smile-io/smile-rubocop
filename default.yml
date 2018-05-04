@@ -30,7 +30,7 @@ Layout/AlignParameters:
 Style/Documentation:
   Enabled: false
 
-Style/SpaceInLambdaLiteral:
+Layout/SpaceInLambdaLiteral:
   EnforcedStyle: require_space
 
 Gemspec/OrderedDependencies:
