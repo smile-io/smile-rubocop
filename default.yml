@@ -44,3 +44,11 @@ Style/StringLiteralsInInterpolation:
 
 Layout/DotPosition:
   EnforcedStyle: trailing
+
+Style/SymbolArray:
+  Enabled: true
+  EnforcedStyle: brackets
+  
+Style/WordArray:
+  Enabled: true
+  EnforcedStyle: brackets
