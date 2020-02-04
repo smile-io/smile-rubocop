@@ -7,12 +7,13 @@ Gem::Specification.new do |spec|
   spec.email         = ["alexw@smile.io"]
 
   spec.summary       = "Smile.io shared rubocop config."
-  spec.homepage      = "https://www.smile.io"
+  spec.homepage      = "https://www.github.com/smile-io/smile-rubocop"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "https://TODO: Set to 'http://mygemserver.com'"
+    spec.metadata["github_repo"] = "ssh://github.com/smile-io/smile-rubocop"
+    spec.metadata["allowed_push_host"] = "https://rubygems.pkg.github.com/smile-io/smile-rubocop"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."

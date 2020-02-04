@@ -4,13 +4,27 @@ This gem holds a shared rubocop config for Smile.io Ruby repositories.
 Installing the gem will also install a version of Rubocop compatible with this
 config.
 
+## Bundler Authentication
+
+This gem is hosted on Github Packages, so you will need to configure bundler to use a github access token in order to install it.
+
+_Note:_ If running `bundle config | grep rubygems.pkg.github.com/smile-io` returns `https://rubygems.pkg.github.com/smile-io/` you've likely already completed this step, and can skip forward to [Installation](#installation).
+
+1) [Create a Github Personal Access Token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line)
+
+2) Execute:
+```bash
+bundle config https://rubygems.pkg.github.com/smile-io USERNAME:TOKEN
+```
+(replacing `USERNAME` with your github username, and `TOKEN` with your new access token)
+
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-source "https://gem.fury.io/smileio/" do
-  gem 'smile_rubocop'
+source "https://rubygems.pkg.github.com/smile-io" do
+  gem "smile_rubocop"
 end
 ```
 
