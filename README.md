@@ -10,7 +10,7 @@ This gem is hosted on Github Packages, so you will need to configure bundler to 
 
 _Note:_ If running `bundle config | grep rubygems.pkg.github.com/smile-io` returns `https://rubygems.pkg.github.com/smile-io/` you've likely already completed this step, and can skip forward to [Installation](#installation).
 
-1) [Create a Github Personal Access Token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line)
+1) [Create a Github Personal Access Token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) (Make sure you set `read:packages` permission for the token)
 
 2) Execute:
 ```bash
