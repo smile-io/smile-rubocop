@@ -1,3 +1,3 @@
 module SmileRubocop
-  VERSION = "0.1.4-pre"
+  VERSION = "0.1.4"
 end
