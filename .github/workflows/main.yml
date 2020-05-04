@@ -1,6 +1,9 @@
 name: Publish Ruby Gem
 
-on: push
+on:
+  push:
+    branches:
+      - '*'
 
 jobs:
   publish:
@@ -12,8 +15,12 @@ jobs:
         uses: actions/setup-ruby@master
         with:
           ruby-version: 2.6.x
+      - name: Check for pre-release on branch.
+        id: release-check
+        if: github.ref != 'refs/heads/master'
+        run: ./bin/check_pre_release
       - name: Publish to GPR
-        if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/master' || steps.release-check.outputs.status == 'success'
         run: |
           mkdir -p $HOME/.gem
           touch $HOME/.gem/credentials

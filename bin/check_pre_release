@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+require "rubygems"
+
+spec = Gem::Specification::load(File.expand_path("../../smile_rubocop.gemspec", __FILE__))
+
+puts spec.version
+
+# Exit with 1 if the version is a patch version.
+if spec.version.to_s.match(/[^0-9.]+/)
+  system("echo ::set-output name=status::success")
+else
+  puts "This is not a pre release version!"
+  system("echo ::set-output name=status::failure")
+end
